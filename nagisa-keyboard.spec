@@ -1,5 +1,5 @@
 %define version   0.0.1
-%define release   %mkrel 3
+%define release   %mkrel 4
 %define src_name  nagisa
 
 %define scim_version   1.4.2
@@ -13,7 +13,6 @@ License:   GPL
 URL:       http://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
 Source0:   %{src_name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-Requires:        libqt3
 Requires:        scim >= %{scim_version}
 BuildRequires:   qt3-devel
 BuildRequires:   scim-devel
