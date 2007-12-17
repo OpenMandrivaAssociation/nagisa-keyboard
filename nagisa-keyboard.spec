@@ -12,7 +12,6 @@ Group:     System/Internationalization
 License:   GPL
 URL:       http://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
 Source0:   %{src_name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:        scim >= %{scim_version}
 BuildRequires:   qt3-devel
 BuildRequires:   scim-devel
