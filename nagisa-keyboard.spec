@@ -1,5 +1,5 @@
 %define version   0.0.1
-%define release   %mkrel 7
+%define release   %mkrel 8
 %define src_name  nagisa
 
 %define scim_version   1.4.2
