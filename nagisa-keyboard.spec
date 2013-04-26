@@ -1,18 +1,16 @@
-%define version   0.0.1
-%define release   %mkrel 8
 %define src_name  nagisa
 
 %define scim_version   1.4.2
 
 Name:      nagisa-keyboard
 Summary:   A software keyboard for SCIM
-Version:   %{version}
-Release:   %{release}
+Version:   0.0.1
+Release:   9
 Group:     System/Internationalization
 License:   GPL
 URL:       http://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
 Source0:   %{src_name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Source1:   %{name}.rpmlintrc
 Requires:        scim >= %{scim_version}
 BuildRequires:   qt3-devel
 BuildRequires:   scim-devel
@@ -29,8 +27,6 @@ qmake "PREFIX=/usr"
 make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/nagisa/
 
@@ -45,7 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
-%defattr(-,root,root)
 %doc COPYING
 %{_bindir}/*
 %{_datadir}/nagisa/*
@@ -80,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 
-* Wed Dec 07 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.0.1-2mdk
+* Wed Dec 07 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.0.1-2mdk
 - Fix BuildRequires
 
 * Wed Nov 16 2005 UTUMI Hirosi <utuhiro78@yahoo.co.jp> 0.0.1-1mdk
