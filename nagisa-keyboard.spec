@@ -6,6 +6,7 @@ License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
 Source0:	nagisa-%{version}.tar.bz2
+Source10:	%{name}.rpmlintrc
 Requires:	scim
 BuildRequires:	qt3-devel
 BuildRequires:	scim-devel
