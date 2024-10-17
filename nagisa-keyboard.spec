@@ -4,7 +4,7 @@ Version:	0.0.1
 Release:	10
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
+Url:		https://nop.net-p.org/modules/pukiwiki/index.php?%5B%5Bnagisa%5D%5D
 Source0:	nagisa-%{version}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Requires:	scim
